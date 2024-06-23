@@ -120,7 +120,7 @@ main img{
     align-items: center;
     justify-content: center;
 }
-main .fa-brands{
+main .fa-brands , main i{
     color: #00ffd5;
     border-radius: 50%;
     padding: 5px;
@@ -188,14 +188,6 @@ main .fa-brands{
     font-size: 18px;
     color: #ffffff;
 }
-.contact{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom,#071952,#0B666A); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .scroll{
     height: 40px;
     width: 40px;
@@ -210,60 +202,10 @@ main .fa-brands{
     justify-content: center;
     align-items: center;
     transition: 0.85s;
+    z-index: 2;
 }
-.main_contact{
-    height: 80%;
-    width: 80%;
-    background-color: #0B666A;
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.main_contact input , .main_contact textarea , button{
-    display: block;
-    padding: 10px;
-    margin: 20px 0px;
-    color: #ffffff;
-    border: 2px solid #2d2d2d;
-    border-radius: 10px;
-    outline: none;
+.a{
     background-color: transparent;
-} 
-.main_contact input::placeholder,.main_contact textarea::placeholder{
-    font-style: italic;
-    color: #ffffffba;
-    margin-left: 5px;
-}
-.call , .email{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid #00ffd5;
-    border-radius: 20px;
-    padding: 2.5px;
-    width: 80%;
-    margin:  10px;
-    background-color: rgba(255, 255, 255, 0.066);
-}
-.email{
-    margin-bottom: 35px;
-}
-.call i , .email i{
-    margin: 15px;
-}
-.get , .m{
-    font-size: 50px;
-    font-weight: 700;
-    color: #00ffd5;
-    margin-bottom: 30px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.7px;
-    font-family: math;
-    text-shadow: 0px 7px #00ffd54f;
 }
 
 @media(max-width:582px){
@@ -310,7 +252,7 @@ main .fa-brands{
     .main input{
         margin-top: 47px;
     }
-    main i.fa-brands,i.fa-whatsapp{
+    main i.fa-brands,i.fa-whatsapp ,main i{
         translate: 25px 2160%;
     }
     .logo{
@@ -320,7 +262,7 @@ main .fa-brands{
         margin-top: -30px;
     }  
     .Projects{
-        height: 520%;
+        height: 540%;
     }
     .Projects ul{
         display: flex;
@@ -346,47 +288,4 @@ main .fa-brands{
     .main_contact .fa-arrow-up{
         translate: 0px 0%;
     }
-    .contact{
-        height: 130%;
-    }
-    .main_contact{
-        background-color: transparent;
-        flex-direction: column;
-        
-    }
-     form{
-        width: 100%;
-        height: 100%;
-        margin-left: 49px;
-    }
-    .main_contact input , .main_contact textarea {
-        background-color: rgba(255, 255, 255, 0.066);
-        color: white;
-        border: 1px solid #00ffd5;
-        border-radius: 20px;
-        padding-right: 38px;
-        font-size: 15px;
-    } 
-    .main_contact input{
-        padding: 17px;
-        padding-right: 60px;
-        font-size: 15px;
-    }
-    .main_contact button{
-        width: 100px;
-        height: 45px;
-        background-color: #0a2060;
-        margin-top: 40px;
-        font-size: 18px;
-        font-weight: 600;
-        border: none;
-        margin-left: 5px;
-        transition: 0.7s;
-    }
-     button:hover{
-        background-color: #05439b;
-        transform: scale(1.19);
-    
-    }
-
 }
